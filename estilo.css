@@ -1,0 +1,87 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'MuseoModerno', cursive;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: #1a1a1a ;
+}
+
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #110101;
+	box-shadow: 0px 5px 20px #000; /* bota uma sobra no menu */
+	padding: 10px; /* para nao deixar os elementos colados */
+	display: flex; /* automaticamente viram flex itens, 
+	deixa um ao lado do outro. Nao se aplica aos filhos dos filhos */
+	align-items: center; /* para centralizar os box menu no centro */
+	flex-wrap: wrap; /* caso um box se choque com outro */
+	justify-content: space-between; /* Para deixar 1 na esquerda e outro na direita */
+}
+
+.menu{
+	list-style: none;
+	display: flex; /* deixando um ao lado do outro */
+	flex-wrap: wrap; /* caso um box se choque com outro */
+}
+
+.menu li a {
+	color: #fff;
+    display: block;	/* se tratando de um elemnto de linha, 
+	queremos transformar em um elemnto de caixa */
+	text-decoration: none; /* tirando o sublinhado do link */
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	margin-left: 10px;
+
+}
+
+.menu li a:hover{
+	color: #fff;
+    display: block;	/* se tratando de um elemnto de linha, 
+	queremos transformar em um elemnto de caixa */
+	text-decoration: none; /* tirando o sublinhado do link */
+	background-color: #333;
+	margin-left: 10px;
+
+}
+
+.logo{
+	width: 45px;
+	height: 45px;
+	border-radius: 10px; /* deixando a boda redonda */
+	background-color: #ccc;
+
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto; /* para centralizar as imagens*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container div{
+	flex: 1 1 300px ; /* ajustando minha flex item dentro de um container maior*/
+	margin: 10px;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+
+
+
